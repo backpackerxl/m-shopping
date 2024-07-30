@@ -1,0 +1,6 @@
+.container {
+    width: 37.5rem;
+    background-color: var(--main-white-color);
+    margin: 0 auto;
+    overflow: hidden;
+}

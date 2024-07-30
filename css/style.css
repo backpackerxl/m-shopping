@@ -1,0 +1,18 @@
+.container .top-warrper {
+    position: relative;
+    width: 100%;
+    height: 48.9rem;
+    border-radius: 15rem;
+}
+
+.container .top-warrper::after {
+    position: absolute;
+    content: "";
+    top: -13.5rem;
+    left: 50%;
+    width: 59.6rem;
+    height: 48.9rem;
+    transform: translateX(-60%);
+    background-color: var(--main-color);
+    border-radius: 45%;
+}

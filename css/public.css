@@ -1,0 +1,60 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #53B87C;
+    --main-color-dark: #4BAD73;
+    --main-color-1: #60DEB1;
+    --main-color-1-5: rgb(13, 177, 118, .15);
+    --main-color-dark-2: rgb(75, 173, 115, .2);
+    --main-color-2: #0DB176;
+    --main-white-color: #FFFFFF;
+    --main-gray: #BDBDBD;
+    --main-gray-8: #828282;
+    --main-gray-9: #F2F2F2;
+    --main-black-4: #444;
+    --main-color-green-2: rgb(80, 188, 124, .2);
+    --main-black-1: rgb(0, 0, 0, .1);
+    --main-black-2: rgb(0, 0, 0, .2);
+    --main-black-5: rgb(0, 0, 0, .56);
+    --main-blue: #2D9CDB;
+    --main-red: #EB5757;
+    --main-gold: #FFE081;
+}
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    margin: 0;
+}
+
+a {
+    margin: 0;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul>li {
+    margin: 0;
+    list-style: none;
+}
+
+input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}

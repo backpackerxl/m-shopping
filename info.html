@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情页</title>
+    <link rel="stylesheet" href="./css/info.min.css">
+    <script>
+        if (document.documentElement.clientWidth > 490) {
+            document.documentElement.style.fontSize = '10px';
+        } else {
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 37.5 + 'px';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-warrper">
+            <i class="me-back-bg"></i>
+            <div class="bg-box">
+                <img src="./img/product/huluobobg.png" />
+            </div>
+            <ul>
+                <li class="now"></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <i class="me-love-bg"></i>
+        </div>
+
+        <div class="content-warrper">
+            <div class="product-information">
+                <div class="title">
+                    <p class="pro-tag">vegetables</p>
+                    <h1 class="pro-name">新鲜的胡萝卜</h1>
+                    <h3 class="price">RJB 18,000 <span>/kg</span><span>RJB 21,000</span></h3>
+                </div>
+                <div class="txt-info">
+                    <div class="tab-warrper">
+                        <input type="radio" id="type" name="drone" checked>
+                        <label for="type"><span class="type-tag">类型</span></label>
+                        <input type="radio" id="nutrients" name="drone">
+                        <label for="nutrients"><span class="nutrients-tag">营养成分</span></label>
+                        <div class="info-txt-warrper">
+                            <div class="type">
+                                <p>胡萝卜是一种根类蔬菜，最常见的颜色是橙色，但也存在紫色、黑色、红色、白色和黄色的品种，所有这些品种都是野生胡萝卜的驯化形式，Daucus
+                                    carota，原产于欧洲和亚洲西南部。
+                                </p>
+                            </div>
+                            <div class="nutrients">
+                                <p>胡萝卜含有人体必需的多种营养成分，每100克胡萝卜中含有：碳水化合物7.6-8.8克、蛋白质0.6-1.4克、膳食纤维3.2克。脂肪0.2-0.3克、钙32mg、钾193mg、钠25.1mg、维生素C12mg、胡萝卜素1.35至17.25mg。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recomend-list">
+                    <h2 class="head-txt">相关产品</h2>
+                    <div class="box">
+                        <div>
+                            <img src="./img/product/x1.png">
+                        </div>
+                        <div>
+                            <h1>新鲜的辣椒</h1>
+                            <h2>RJB 12,000 <span>/ kg</span></h2>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <img src="./img/product/x2.png">
+                        </div>
+                        <div>
+                            <h1>Fresh Onion</h1>
+                            <h2>Rp 21,000 <span>/ kg</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bot_warp" class="bottom-warpper">
+            <div>
+                <button onclick="sub(this)" class="sub">-</button>
+                <span number="1" class="number"></span>
+                <button onclick="plus(this)" class="plus">+</button>
+            </div>
+            <div>
+                <button class="add-car">加入购物车</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/info.js"></script>
+</body>
+
+</html>

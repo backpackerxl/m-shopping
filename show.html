@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宣传页</title>
+    <link rel="stylesheet" href="css/show.min.css">
+    <script>
+        if(document.documentElement.clientWidth > 490){
+            document.documentElement.style.fontSize = '10px';
+        }else{
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 37.5 + 'px';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-warrper">
+            <h1>Kangsayur</h1>
+            <div class="img-box"></div>
+        </div>
+
+        <div class="content-warrper">
+            <p>Kangsayur 是杂货店的解决方案</p>
+            <p>购买你需要的一切</p>
+            <a href="#">
+                <p>开启新生活</p>
+            </a>
+            <ul>
+                <li></li>
+                <li></li>
+                <li class="active"></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.container').style.height = document.documentElement.scrollHeight + 'px';
+    </script>
+</body>
+
+</html>

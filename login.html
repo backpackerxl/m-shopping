@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页</title>
+    <link rel="stylesheet" href="css/login.min.css">
+    <script>
+        if (document.documentElement.clientWidth > 490) {
+            document.documentElement.style.fontSize = '10px';
+        } else {
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 37.5 + 'px';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-warrper">
+            <i class="go-back"></i>
+            <h1>登录</h1>
+            <div class="img-box"></div>
+        </div>
+
+        <div class="login-box">
+            <form action="#" method="GET">
+                <div class="box">
+                    <p>邮箱</p>
+                    <input type="text" name="email" placeholder="请输入邮箱">
+                </div>
+                <div class="box">
+                    <p>密码</p>
+                    <input type="password" name="password" placeholder="你的密码">
+                    <i class="eye-icon"></i>
+                    <p class="txt-right"><a href="#">忘记密码</a></p>
+                </div>
+                <div class="box">
+                    <input type="submit" value="登 录">
+                </div>
+            </form>
+            <p class="txt-center">没有账户? <a href="#">注册</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

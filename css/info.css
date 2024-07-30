@@ -1,0 +1,307 @@
+@import url(public.css);
+@import url(basic.css);
+
+.container .top-warrper {
+    position: relative;
+    width: 100%;
+    height: 34.1rem;
+}
+
+.container .top-warrper .me-back-bg,
+.container .top-warrper .me-love-bg {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+    background-color: var(--main-black-5);
+    top: 4.5rem;
+}
+
+.container .top-warrper .me-back-bg {
+    left: 2rem;
+}
+
+.container .top-warrper .me-back-bg::after,
+.container .top-warrper .me-love-bg::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: .8rem;
+    left: .8rem;
+}
+
+.container .top-warrper ul {
+    position: absolute;
+    bottom: 5.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.container .top-warrper ul li {
+    float: left;
+    width: .8rem;
+    height: .8rem;
+    border-radius: .5rem;
+    background-color: var(--main-gray-8);
+    margin: 0 .3rem;
+}
+
+.container .top-warrper ul li.now {
+    background-color: var(--main-white-color);
+}
+
+.container .top-warrper .me-back-bg::after {
+    background: url(../img/left.png) no-repeat;
+}
+
+.container .top-warrper .me-love-bg::after {
+    background: url(../img/love.png) no-repeat;
+}
+
+.container .top-warrper .me-love-bg {
+    right: 2rem;
+}
+
+.container .content-warrper {
+    width: 100%;
+    height: 47rem;
+    background-color: var(--main-white-color);
+    border-radius: 3.5rem;
+    box-shadow: -3.5rem -3.5rem 4rem var(--main-black-5);
+    transform: translateY(-3.5rem);
+}
+
+.content-warrper .title {
+    padding: 2.5rem;
+    line-height: 2.8rem;
+}
+
+.content-warrper .title .pro-tag {
+    margin-left: .5rem;
+    height: 1.7rem;
+    width: 6.5rem;
+    text-align: center;
+    color: var(--main-color-dark);
+    background-color: var(--main-color-dark-2);
+    line-height: 1.7rem;
+    border-radius: .5rem;
+}
+
+.content-warrper .title .pro-name {
+    margin-left: .5rem;
+    font-weight: 600;
+    color: var(--main-black-4);
+    font-size: 2.4rem;
+}
+
+.content-warrper .title .price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--main-color-dark);
+}
+
+.content-warrper .title .price span {
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: var(--main-gray);
+}
+
+.content-warrper .title .price span:nth-child(2) {
+    margin-left: 1.5rem;
+    text-decoration: line-through;
+}
+
+.content-warrper .tab-warrper {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    line-height: 4rem;
+}
+
+.content-warrper .tab-warrper::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: .2rem;
+    background-color: var(--main-gray);
+    top: 4rem;
+    left: 0;
+}
+
+.content-warrper .tab-warrper span {
+    position: relative;
+    font-size: 1.4rem;
+    margin: 0 2.5rem;
+    transition: all .2s ease-in-out;
+}
+
+.content-warrper #type,
+.content-warrper #nutrients {
+    display: none;
+}
+
+.content-warrper #type:checked+label .type-tag,
+.content-warrper #nutrients:checked+label .nutrients-tag {
+    color: var(--main-color-dark);
+}
+
+.content-warrper .type-tag::after,
+.content-warrper .nutrients-tag::after {
+    transition: all .2s ease-in-out;
+    transition-delay: .3s;
+}
+
+.content-warrper #type:checked+label .type-tag::after,
+.content-warrper #nutrients:checked+label .nutrients-tag::after {
+    position: absolute;
+    content: "";
+    bottom: -1.4rem;
+    left: 50%;
+    width: 8.1rem;
+    height: .5rem;
+    transform: translateX(-50%);
+    background-color: var(--main-color-dark);
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.content-warrper .txt-info .info-txt-warrper {
+    font-size: 1.3rem;
+    color: var(--main-gray);
+    line-height: 1.8rem;
+    padding: 1rem 2.5rem;
+}
+
+.content-warrper .info-txt-warrper .type,
+.content-warrper .info-txt-warrper .nutrients {
+    text-align: justify;
+    display: none;
+    transition: all .3s ease-in-out;
+    animation: leftToCenter .2s;
+}
+
+@keyframes leftToCenter {
+    0% {
+        transform: translateX(-150%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.content-warrper #type:checked~.info-txt-warrper .type,
+.content-warrper #nutrients:checked~.info-txt-warrper .nutrients {
+    display: block;
+}
+
+.content-warrper .recomend-list {
+    width: 60rem;
+    padding: 0 2.5rem;
+}
+
+.content-warrper .recomend-list h2.head-txt {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.content-warrper .recomend-list .box {
+    float: left;
+    width: 20.6rem;
+    height: 6.3rem;
+    display: flex;
+    margin-right: 1.5rem;
+    box-shadow: 0 .2rem .6rem var(--main-black-1);
+    border-radius: 1rem;
+    align-items: center;
+}
+
+.content-warrper .recomend-list .box div:nth-child(2) {
+    margin-left: 1rem;
+}
+
+.content-warrper .recomend-list .box h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+}
+
+.content-warrper .recomend-list .box h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--main-color-dark);
+}
+
+.content-warrper .recomend-list .box h2 span {
+    font-size: .8rem;
+    font-weight: normal;
+    color: var(--main-gray);
+}
+
+.container .bottom-warpper {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 37.5rem;
+    padding: 2.5rem;
+    transform: translateX(-50%);
+    height: 9.2rem;
+    background-color: var(--main-white-color);
+    border-radius: 3.4rem 3.4rem 0 0;
+    box-shadow: 0rem -2rem 4rem var(--main-black-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .bottom-warpper div:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+.container .bottom-warpper .plus,
+.container .bottom-warpper .sub {
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--main-color-dark);
+    background-color: transparent;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--main-color-dark);
+}
+
+.container .bottom-warpper .number {
+    position: relative;
+    display: inline-block;
+    width: 4.9rem;
+    height: 4.9rem;
+    border-radius: 1rem;
+    background-color: var(--main-color-1-5);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--main-color-dark);
+    margin: 0 .8rem;
+}
+
+.container .bottom-warpper .number::after {
+    position: absolute;
+    content: attr(number);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .bottom-warpper .add-car {
+    width: 18.1rem;
+    height: 4.9rem;
+    background-color: var(--main-color-dark);
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--main-white-color);
+    border: none;
+}
